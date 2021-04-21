@@ -1,0 +1,26 @@
+#tableContainer{
+    position: relative;
+    height:300px;
+    overflow: auto;
+    /* border:1px solid #ccc; */
+}
+#table{
+    /* width: 100%; */
+    border-collapse: collapse;
+    text-align: center;
+}
+thead{
+    background-color:#F1F3F5 ;
+}
+
+tr{
+    transition:all 0.3s;
+}
+th,td{
+    border:1px solid #e2e4e1;
+    width: 400px;
+    line-height: 30px;
+}
+tr :last-child{
+    width: 1300px;
+}

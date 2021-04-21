@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2</title>
+    
+</head>
+<link rel="stylesheet" href="table2.css">
+<!-- <script src="table2.js"></script> -->
+<body>
+    <div class="tablehead">
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>地点</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tablebody">
+        <table>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>北京市海淀区北下关街道</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>20</td>
+                    <td>湖北省武汉市欢乐大道</td>
+                </tr>
+                <tr>
+                    <td>王五啦啦啦</td>
+                    <td>22</td>
+                    <td>北京市海淀区上地西路6号</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>北京市海淀区北下关街道</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>20</td>
+                    <td>湖北省武汉市欢乐大道</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>22</td>
+                    <td>北京市海淀区上地西路6号</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>北京市海淀区北下关街道</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>20</td>
+                    <td>湖北省武汉市欢乐大道</td>
+                </tr>
+                <tr>
+                    <td>王五啦啦啦</td>
+                    <td>22</td>
+                    <td>北京市海淀区上地西路6号</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>北京市海淀区北下关街道</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>20</td>
+                    <td>湖北省武汉市欢乐大道</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>22</td>
+                    <td>北京市海淀区上地西路6号</td>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+</body>
+<script>
+    var tablebody = document.querySelector('tbody')
+    // console.log(tablebody);
+    trItem = tablebody.children
+    // console.log(trItem);
+
+    for(var i=0;i<trItem.length;i++){
+        var color = '';
+        trItem[i].addEventListener("mouseenter",function(){
+            this.style.backgroundColor = "#d8e8f8 "
+        })
+        trItem[i].addEventListener("mouseleave",function(){
+            this.style.backgroundColor = "";
+        })
+        
+    }
+</script>
+</html>
